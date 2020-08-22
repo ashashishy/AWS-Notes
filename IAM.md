@@ -1,6 +1,6 @@
-IAM (Identity and Access Management)
+<h3>IAM (Identity and Access Management)</h3>
 
-Consists of Users, roles and groups
+<p>Consists of Users, roles and groups
 
 Root account should never be shared or used(it has the most power)
 
@@ -49,7 +49,7 @@ company credentials.
 
 IAM Federation uses SAML standards(Active Directory)
 
-Identity federation can be used to get temporary access to aws account
+Identity federation can be used to get temporary access to aws account</p>
 
 <h2>INFRASTRUCTURE ELEMENTS</h2>
         <h3>Principle</h3>
