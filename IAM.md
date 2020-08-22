@@ -54,4 +54,4 @@ Identity federation can be used to get temporary access to aws account</p>
 <h2>INFRASTRUCTURE ELEMENTS</h2>
         <h3>Principle</h3>
 
-        An entity that can make a request for an action or operation
+<p> An entity that can make a request for an action or operation </p>
