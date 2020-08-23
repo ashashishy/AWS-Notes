@@ -90,3 +90,37 @@ An explicit allow permission in policy overwrites this default
 A permission boundary overwrites allow. if there is a permission boundary applied, the permission boundary must allow the request otherwise it is implicitly denied.
 
 An exolicit deny in any policy overwrites any allow.
+
+<h2>Users</h2>
+
+<h3>IAM Users</h3>
+Create individual iam users for each user. do not share root account with anyone. Iam users are users wihtin your aws account
+
+By default a brand new iam user has no permission
+
+users are global entities
+
+<h3>Federated Users</h3>
+If a user in your organisation has already a way to authenticate, you can federate that user indentity into aws
+
+<h3>Iam Role</h3>
+A role does not have any credentials associated with it.
+A user can assume a role to gain temporay acces to the aws resource
+
+<h3>Policies</h3>
+
+Policies are written in json
+
+To assign permissions to federated users you can create an entity role and assign policies to that role
+
+Inline policies are managed by user and are attached to specific role, user or group
+
+Resource based policies are policies that are attached to resources such as s3, they are inline policies
+
+<h3>Aws security Token Service</h3>
+
+Create and provide temporary security credentials that can controll access to aws services
+
+STS are short term and are not stored with the user but are generated dynamically and provided to the user.
+
+By default STS is a global service with endpoint http://sts.amazonaws.com
