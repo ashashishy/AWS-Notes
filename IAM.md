@@ -38,6 +38,8 @@ Use access keys to make programatic requests to aws. Access key and secret acces
 
 Iam is eventually consistant. Iam achieves high availibility by replicating data across multiple servers with in aws data centers around the globe.
 
+An iam user created using Aws cli does not have any permission, acess key and secret access key by default
+
 Unique account signin page URL:
 https://my_account_id.signin.aws.amazon.com/console/
 
