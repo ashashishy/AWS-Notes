@@ -148,3 +148,11 @@ The name you specify for the placement group must be unique within your aws acco
 You cant merge placement groups 
 An instance can be launched in one placement group at a time, it cannot span multiple placement groups
 Instance be tenancy host cannot be launched in a placement group
+
+<h3>Instance Meta Data and User Data</h3>
+Instance meta data is data about your instance that you can use to configure or manage running instance.
+instance meta data and user data are not protected by cryptographic methods
+view all categories of instance meta data from within a running instance at http://169.254.169.254/latest/meta-data/
+you can pass two types of user data to ec2: shell scripts and cloud-init directives.
+user data is limited to 16kb
+if you stop an instance modify its user data and start the instnace the updated user data is not executed when you start the instance
