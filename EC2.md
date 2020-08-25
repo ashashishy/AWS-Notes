@@ -121,3 +121,30 @@ A bastion host is a server whose purpose is to provide access to a private netwo
 EC2 items to monitor.
 CPU utilication, network utilization, disk performance, disk read/writes using ec2 metrics
 memory utilization, disk swap utilization, disk space utilization, page file utilization, log collection using monitorind agent/ cloudwatch logs.
+
+system status check- monitor the aws instance require to use your instance to ensure they are working properly. They checks detect problems with your instnace that require aws involvement to fix
+
+instnace status check- monitor software and network configuration of individual instances. this checks detect problems that are to be fixed by you
+
+cloudwatch alarm- watch a single metric over time that you specify and perform action based on the value of the metrics relative to the given metric over a number of time period.
+
+Aws cloudwatch events- automate your aws services and respond automatically to system events.
+
+Aws cloudwatch logs- monitor store and access log files from ec2 instances, cloudtrail and other services
+
+MOnitor ec2 instnaces with aws cloudwatch, by default ec2 sends metric data every 5 minutes
+
+<h3>Placement Groups</h3>
+Placement groups determine how instances are placed on an underlying physical harware.
+
+cluster- cluster instances are placed on a same underlying harware for low letency and high network throughput or both in a single availibility. Good for instnaces whos network traffic is between each other.
+
+spread- spread instances are placed on different harwares. Recommended for applications that have small number of critical applications that should be kept seperate from each other.A spread placement group can span multiple availibility zones and you can have maximum of seven instances per availibility zone per placement group.
+
+Partition placement group is an ec2 placement strategy in which the ec2 instances spread accross logical partition and make sure intances from different partition do not share same underlying hardware
+
+<h3>Rules</h3>
+The name you specify for the placement group must be unique within your aws account for the region
+You cant merge placement groups 
+An instance can be launched in one placement group at a time, it cannot span multiple placement groups
+Instance be tenancy host cannot be launched in a placement group
